@@ -95,7 +95,39 @@ body {
 
 }
 .navbar-default .navbar-nav>li>a {
-    color: #777;
+    color: #282828;
     font-weight: 700;
     font-size: 16px;
+}
+.hero-banner.v2 .navbar-default .navbar-nav>li>a  {
+  color: #fff;
+}
+.hero-banner.v1 .front-image{
+  display: block;
+}
+.hero-banner.v1 .front-2{
+  display: none;
+}
+.hero-banner.v2 .front-image{
+  display: none;
+
+}
+
+.hero-banner.v2{
+  background: linear-gradient(45deg, #003c9c,  #540b80);
+height: 100vh;
+}
+
+.hero-banner.v2 .main-heading {
+  color: #fff;
+}
+
+.front-2 {
+  width: 115%;
+      margin-top: -100px;
+}
+
+.hero-banner.v2 .btn-theme.outline {
+  background: #fff;
+  border-color: #fff;
 }
