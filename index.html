@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div class="hero-banner v2">
+	<div class="hero-banner v1">
 		   <nav class="navbar navbar-default navbar-transprent" style="padding-top: 30px;">
 	           <div class="container">
 	             <!-- Brand and toggle get grouped for better mobile display -->
@@ -17,7 +17,7 @@
 	                 <span class="icon-bar"></span>
 	                 <span class="icon-bar"></span>
 	               </button>
-	              <a class="navbar-brand app-logo" href="/">
+	              <a class="navbar-brand" href="#">
 	                Logo
 	                </a>
 	             </div>
@@ -25,7 +25,12 @@
 	             <!-- Collect the nav links, forms, and other content for toggling -->
 	             <div class="collapse navbar-collapse app" id="navbar-sample">
 	               <ul class="nav navbar-nav">
-	                 
+	                 <li>
+	                 	<a href="#" onclick="v1()">style1</a>
+	                 </li>
+	                 <li>
+	                 	<a href="#" onclick="v2()">style2</a>
+	                 </li>
 	               </ul>
 	               <ul class="nav navbar-nav navbar-right">
 	                 <li><a href="/web-store">Login</a></li>
@@ -64,7 +69,28 @@
 	       	</div>
 	       </div>
 	</div>
-	   
+	   <script src="js/jquery.min.js"></script>
+<script>
+	
+	function v1() {
+			
+		if($('.hero-banner').hasClass('v2')){
 
+		   $('.hero-banner').removeClass('v2')
+		  $('.hero-banner').addClass('v1')
+		   
+		}
+	}
+
+		function v2() {
+			
+		if($('.hero-banner').hasClass('v1')){
+
+		   $('.hero-banner').removeClass('v1')
+		  $('.hero-banner').addClass('v2')
+		   
+		}
+	}
+</script>
 </body>
 </html>
