@@ -13,9 +13,6 @@ body {
 }
 
 
-.heading {
-  font-weight: 400 !important;
-}
 :root {
   --theme-color: #752ceb;
  
@@ -130,4 +127,98 @@ height: 100vh;
 .hero-banner.v2 .btn-theme.outline {
   background: #fff;
   border-color: #fff;
+}
+.brand-support-icon {
+  padding: 0;
+}
+.brand-support-icon li img {
+  width: 100%;
+}
+
+.brand-support-icon li {
+  list-style: none;
+      --size: 110px;
+      width: var(--size);
+      height: var(--size);
+    box-shadow: -1px 3px 10px #00000024;
+        padding: 15px;
+        border-radius: 6px;
+        margin: 40px 50px;
+
+}
+
+.heading {
+ margin-bottom: 30px;
+ font-size: 50px;
+}
+
+.brands-box {
+  box-shadow: 3px 4px 50px 20px #0000001c;
+  width: 100%;
+}
+
+.brands-box .nav-pills>li>a{
+ font-size: 26px;
+     margin-right: 50px;
+     font-weight: 800;
+     letter-spacing: 2px;
+  color: #333;
+
+}
+.brands-box .btn {
+  margin-top: 30px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: #333;
+  background: none;
+  border-bottom: 2px solid var(--theme-color);
+  border-radius: 0;
+}
+
+.brands-box p {
+ font-size: 18px;
+ line-height: 2;
+ padding-right: 30px;
+ color: #717171;
+ font-weight: 400;
+ word-spacing: 4px;
+}
+.brands-box .nav-pills {
+  padding-bottom: 30px;
+}
+.brands-box.box-login {
+  min-height: 500px;
+}
+.brands-box form {
+  padding-right: 60px;
+}
+
+.login-body {
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-side-design {
+  background: linear-gradient(45deg, #003c9c, #540b80);
+  min-height: 500px;
+  display: flex;
+}
+
+.form-control {
+  height: 45px;
+      box-shadow: none;
+      background: #eaeaea;
+      border: none;
+}
+.form-group {
+    margin-bottom: 30px;
+}
+
+.brand-box-side-design {
+  background: linear-gradient(45deg, #003c9c, #540b80);
+      height: 575px;
+      display: flex;
 }
