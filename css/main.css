@@ -189,6 +189,7 @@ height: 100vh;
 }
 .brands-box.box-login {
   min-height: 500px;
+    background: #fff;
 }
 .brands-box form {
   padding-right: 60px;
@@ -221,4 +222,10 @@ height: 100vh;
   background: linear-gradient(45deg, #003c9c, #540b80);
       height: 575px;
       display: flex;
+}
+
+.test {
+  background: url(../img/layer.png) no-repeat right top;
+  background-size: 1000px;
+
 }
