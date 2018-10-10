@@ -32,13 +32,23 @@
 	               </ul>
 	               <ul class="nav navbar-nav navbar-right">
 	                 <li><a href="login.html">Login</a></li>
-	                 <li>
-	                 	<p class="navbar-btn">
-	                 	    <a href="#" class="btn btn-theme round" style="padding: 10px 50px;
-	                 	           margin-left: 14px;    margin-top: -6px;">Join</a>
-	                 	 </p>     	
-	                 	
-	                 </li>
+	               <li>
+	               	<p class="navbar-btn">
+	               	    		<div class="dropdown">
+	               	    			  <button class="btn btn-theme round dropdown-toggle" type="button" data-toggle="dropdown" style="padding: 10px 40px;
+	               	               margin-left: 14px;    margin-top: -6px;">
+	               	    			    Join
+	               	    			  </button>
+	               	    			  <ul class="dropdown-menu">
+	               	    			    <li><a href="#">I'm a Influencers</a></li>
+	               	    			    <li><a href="#">I'm a Brand</a></li>
+	               	    			   
+	               	    			  </ul>
+	               	    		</div>
+	               	 </p>     	
+	               	
+	               			
+	               </li>
 	               </ul>
 	             </div>
 	           </div>
@@ -47,48 +57,34 @@
 	       	<div class="container">
 	       		<div class="brands-box box-login row">
 	       			<div class="col-md-7" style="padding: 30px 50px;">
-	       				<ul class="nav nav-pills">
-	       				  <li class="active"><a data-toggle="pill" href="#home">Login</a></li>
-	       				  <li><a data-toggle="pill" href="#menu1">SignUp</a></li>
-	       					       			 
-	       				</ul>
-	       				
-	       				<div class="tab-content">
-	       				  <div id="home" class="tab-pane fade in active">
-	       				    <form action="">
-	       				    	<div class="form-group">
-	       				    		<label for="">Name</label>
-	       				    		<input type="text" class="form-control">
-	       				    	</div>
-	       				    	<div class="form-group">
-	       				    		<label for="">Email</label>
-	       				    		<input type="text" class="form-control">
-	       				    	</div>
-	       				    	<div class="form-group">
-	       				    		 <a href="#" class="btn btn-theme">Join Now</a>
-	       				    	</div>
-	       				    </form>
-	       				    
-	       				  </div>
-	       				  <div id="menu1" class="tab-pane fade">
-	       				   <form action="">
-	       				  			    	<div class="form-group">
-	       				  			    		<label for="">Name</label>
-	       				  			    		<input type="text" class="form-control">
-	       				  			    	</div>
-	       				  			    	<div class="form-group">
-	       				  			    		<label for="">Email</label>
-	       				  			    		<input type="text" class="form-control">
-	       				  			    	</div>
-	       				  			    	<div class="form-group">
-	       				  			    		 <a href="#" class="btn btn-theme">Join Now</a>
-	       				  			    	</div>
-	       				  			    </form>
-
-	       				  </div>
+	       				<form action="">
+	       					<h3>Login</h3>
+	       					<hr>
+	       					<div class="form-group">
+	       						<label for="">Name</label>
+	       						<input type="text" class="form-control">
+	       					</div>
+	       					<div class="form-group">
+	       						<label for="">Email</label>
+	       						<input type="text" class="form-control">
+	       					</div>
 	       				 
-	       				</div>
-	       				
+	       				 <div class="dropdown pull-right" style="font-size: 16px;">
+	       				 	       				 Don't have an Accoutn ? 
+	       				 	  <a class="dropdown-toggle" type="button" data-toggle="dropdown">
+	       				 	    SignUp
+	       				 	    <span class="caret"></span>
+	       				 	  </a>
+	       				 	  <ul class="dropdown-menu">
+	       				 	  <li><a href="#">I'm a Influencers</a></li>
+	       				 	  <li><a href="#">I'm a Brand</a></li>
+	       				 	  </ul>
+	       				 </div>
+
+	       					<div class="form-group">
+	       						 <a href="#" class="btn btn-theme">Join Now</a>
+	       					</div>
+	       				</form>
 	       			</div>
 	       			<div class="col-md-5 login-side-design">
 	       		

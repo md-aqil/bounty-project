@@ -229,3 +229,13 @@ height: 100vh;
   background-size: 1000px;
 
 }
+
+footer {
+  background: #0c1014;
+  color: #8792a1;
+  padding: 25px 0;
+}
+footer p {
+  margin: 0;
+text-align: center;
+}
