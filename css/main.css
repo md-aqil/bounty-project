@@ -190,12 +190,13 @@ height: 100vh;
 .brands-box .nav-pills {
   padding-bottom: 30px;
 }
-.brands-box.box-login {
-  min-height: 500px;
+.brands-box {
     background: #fff;
+    display: flex;
 }
 .brands-box form {
   padding-right: 60px;
+  flex-grow: 1;
 }
 
 .login-body {
@@ -207,7 +208,7 @@ height: 100vh;
 
 .login-side-design {
   background: linear-gradient(45deg, #003c9c, #540b80);
-  min-height: 500px;
+  flex-grow: 1;
   display: flex;
 }
 
@@ -223,8 +224,7 @@ height: 100vh;
 
 .brand-box-side-design {
  background: linear-gradient(45deg, #3c019c, #702ae3);
-      height: 575px;
-      display: flex;
+     
 }
 
 .test {
