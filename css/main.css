@@ -1,13 +1,8 @@
-
-
-/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1409">Text with this font applied</p> */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Krub:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900');
 
 
 body {
- font-family: 'Ubuntu', sans-serif;
+ font-family: 'Roboto', sans-serif;
    /*font-family: 'Krub', sans-serif;*/
   
 }
@@ -89,7 +84,7 @@ body {
 .main-heading{
   font-weight: 700;
   font-size: 60px;
-  color: #282828;
+  color: #000;
   line-height: 1.5;
   margin-bottom: 50px;
 
@@ -152,7 +147,9 @@ height: 100vh;
 
 .heading {
  margin-bottom: 30px;
- font-size: 50px;
+ font-size: 34px;
+     line-height: 1.27;
+     letter-spacing: -.8px;
 }
 
 .brands-box {
@@ -161,12 +158,10 @@ height: 100vh;
 }
 
 .brands-box .nav-pills>li>a{
- font-size: 26px;
+ font-size: 25px;
      margin-right: 50px;
-     font-weight: 800;
-     letter-spacing: 2px;
-  color: #333;
-
+     font-weight: 500;
+     color: #000;
 }
 .brands-box .btn {
   margin-top: 30px;
@@ -207,7 +202,7 @@ height: 100vh;
 }
 
 .login-side-design {
-  background: linear-gradient(45deg, #003c9c, #540b80);
+  background: linear-gradient(45deg, #5400dc, #540b80);
   flex-grow: 1;
   display: flex;
 }
@@ -220,11 +215,6 @@ height: 100vh;
 }
 .form-group {
     margin-bottom: 30px;
-}
-
-.brand-box-side-design {
- background: linear-gradient(45deg, #3c019c, #702ae3);
-     
 }
 
 .test {
@@ -321,4 +311,14 @@ footer {
   -o-animation: none !important;
   animation: none !important;
   visibility: hidden;
+}
+
+.brand-box-side-design img {
+  width:  100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.brand-box-side-design {
+     min-height: 500px;
 }

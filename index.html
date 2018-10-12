@@ -26,7 +26,8 @@
 	             <!-- Collect the nav links, forms, and other content for toggling -->
 	             <div class="collapse navbar-collapse app" id="navbar-sample">
 	               <ul class="nav navbar-nav">
-	                
+	                	<li><a href="">About</a></li>
+	                	<li><a href="faqs.html">FAQs</a></li>
 	               </ul>
 	               <ul class="nav navbar-nav navbar-right">
 	                 <li><a href="login.html">Login</a></li>
@@ -109,55 +110,60 @@
 	       			</li>
 	       		</ul>
 	       </div>
-	       <div class="container spacethis">
-	       	<div class="brands-box row">
-	       		<div class="col-md-7" style="padding: 30px 50px">
-	       			<ul class="nav nav-pills">
-	       			  <li class="active"><a data-toggle="pill" href="#home">For Influencer</a></li>
-	       			  <li><a data-toggle="pill" href="#menu1">For brands</a></li>
-	       				       			 
-	       			</ul>
-	       			
-	       			<div class="tab-content">
-	       			  <div id="home" class="tab-pane fade in active">
-	       			    <p>
-	       			    	Now its easy for you to find online tasks and earn cryptocurrency
-	       			    	as bounty or rewards.
-	       			    	The tasks are as simple as post sharing, tweets, translation, 
-	       			    	youtube review, blogs, etc.
-	       			    </p>
-	       			    <p>
-	       			    	Get paid in cryptocurrency for your social meida presence
+	       <div class="container-fluid" style="background: var(--theme-color)">
+	       		<div class="row">
+	       			<div class="container spacethis">
+	       				<div class="brands-box row">
+	       					<div class="col-md-7" style="padding: 30px 50px">
+	       						<ul class="nav nav-pills">
+	       						  <li class="active influencer-tab"><a data-toggle="pill" href="#home">For Influencer</a></li>
+	       						  <li class="brands-tab"><a data-toggle="pill" href="#menu1">For brands</a></li>
+	       							       			 
+	       						</ul>
+	       						
+	       						<div class="tab-content">
+	       						  <div id="home" class="tab-pane fade in active">
+	       						    <p>
+	       						    	Now its easy for you to find online tasks and earn cryptocurrency
+	       						    	as bounty or rewards.
+	       						    	The tasks are as simple as post sharing, tweets, translation, 
+	       						    	youtube review, blogs, etc.
+	       						    </p>
+	       						    <p>
+	       						    	Get paid in cryptocurrency for your social meida presence
 
-	       			    	Now its easy for you to find online tasks and earn cryptocurrency
-	       			    	as bounty or rewards.
-	       			    	The tasks are as simple as post sharing, tweets, translation, 
-	       			    	youtube review, blogs, etc.
-	       			    </p>
-	       			    <a href="#" class="btn btn-theme round">Join Now</a>
-	       			  </div>
-	       			  <div id="menu1" class="tab-pane fade">
-	       			    <p>
-	       			    	Share your campaigns directly to influencers.
+	       						    	Now its easy for you to find online tasks and earn cryptocurrency
+	       						    	as bounty or rewards.
+	       						    	The tasks are as simple as post sharing, tweets, translation, 
+	       						    	youtube review, blogs, etc.
+	       						    </p>
+	       						    <a href="#" class="btn btn-theme round">Join Now</a>
+	       						  </div>
+	       						  <div id="menu1" class="tab-pane fade">
+	       						    <p>
+	       						    	Share your campaigns directly to influencers.
 
-	       			    	Your campaigns can get immediate access to huge number of influencers 
-	       			    	listed on our platform. 
-	       			    	We help to optimize your spending by achieving real audience.
-	       			    </p>
-	       			    <a href="#" class="btn btn-theme round">Join Now</a>
+	       						    	Your campaigns can get immediate access to huge number of influencers 
+	       						    	listed on our platform. 
+	       						    	We help to optimize your spending by achieving real audience.
+	       						    </p>
+	       						    <a href="#" class="btn btn-theme round">Join Now</a>
 
-	       			  </div>
-	       			 
+	       						  </div>
+	       						 
+	       						</div>
+	       						
+	       					</div>
+	       					<div class="col-md-5 brand-box-side-design">
+	       				
+	       						<img class="influencer-img wow fadeIn" src="img/inf.svg" alt="">
+	       						<img class="brands-img animated fadeIn" style="display: none;" src="img/for-brands.svg" alt="">
+	       					</div>
+	       				</div>
 	       			</div>
-	       			
 	       		</div>
-	       		<div class="col-md-5 brand-box-side-design">
-	       	
-	       			<img class="width100" src="img/crypto02.svg" alt="">
-	       		</div>
-	       	</div>
-	       		
 	       </div>
+	      
 	       <footer>
 	       	<div class="container">
 	       		<div class="row">
@@ -193,6 +199,16 @@
 	   <script src="js/WOW.js"></script>
 		
 		<script>
+			$('.influencer-tab').click(function() {
+				$('.brand-box-side-design .influencer-img').css('display' , 'block');
+				$('.brand-box-side-design .brands-img').css('display' , 'none');
+			});
+
+			$('.brands-tab').click(function() {
+				$('.brand-box-side-design .influencer-img').css('display' , 'none');
+				$('.brand-box-side-design .brands-img').css('display' , 'block');
+			});
+
 			new WOW().init();
 
 
