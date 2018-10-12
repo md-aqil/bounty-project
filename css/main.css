@@ -143,7 +143,7 @@ height: 100vh;
       --size: 110px;
       width: var(--size);
       height: var(--size);
-    box-shadow: -1px 3px 10px #00000024;
+    /*box-shadow: -1px 3px 10px #00000024;*/
         padding: 15px;
         border-radius: 6px;
         margin: 40px 50px;
@@ -236,11 +236,7 @@ height: 100vh;
 footer {
   background: #0c1014;
   color: #8792a1;
-  padding: 25px 0;
-}
-footer p {
-  margin: 0;
-text-align: center;
+  padding: 50px 0;
 }
 
 .dropdown-menu li a{
@@ -303,9 +299,26 @@ text-align: center;
  color: #fff;
  text-align: center;
 }
-.footer-links li {
-  float: right;
-}
+
 .footer-links li a {
   color: #fff;
+  padding-right: 30px;
+}
+
+.footer-links.social li {
+  float: right;
+}
+.footer-links.social  li a {
+  padding-right: 0;
+  padding-left: 20px;
+}
+.footer-links.social  li a img {
+  width: 30px;
+}
+
+.animated.standby {
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important;
+  visibility: hidden;
 }

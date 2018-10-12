@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -78,37 +79,37 @@
 		       		</div>
 		       	</div>
 	       </div>
-	       <div class="container spacethis">
+	       <div class="container spacethis icon-container">
 	       
 	       		<h1 class="heading text-center">
 	       			Platforms we support
 	       		</h1>
 	       		<ul class="brand-support-icon list-inline text-center">
-	       			<li>
-	       				<img src="img/facebook.svg">
+	       			<li class="wow fadeInUp" data-wow-delay="">
+	       				<img src="img/facebook.svg" >
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".1s">
 	       				<img src="img/twitter-02.svg">
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".2s">
 	       				<img src="img/instagram-02.svg">
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".3s">
 	       				<img src="img/youtube-02.svg">
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".4s">
 	       				<img src="img/linkedin.svg">
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".5s">
 	       				<img src="img/steemit.png">
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".6s">
 	       				<img src="img/telegram.svg">
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".7s">
 	       				<img src="img/medium.svg">
 	       			</li>
-	       			<li>
+	       			<li class="wow fadeInUp" data-wow-delay=".8s">
 	       				<img src="img/reddit.png">
 	       			</li>
 	       		</ul>
@@ -166,19 +167,76 @@
 	       	<div class="container">
 	       		<div class="row">
 	       			<div class="col-md-6">
-	       				<p>© 2018 Cryptocurrency. All rights reserved.</p>
+	       				<p>Logo</p>
 	       			</div>
 	       			<div class="col-md-6">
+	       				<ul class="list-inline footer-links social">
+	       					<li><a href="faqs.html"><img src="img/telegram-f.svg" alt=""></a></li>
+	       					<li><a href="faqs.html"><img src="img/twitter.svg" alt=""></a></li>
+	       					<li><a href="faqs.html"><img src="img/facebook-logo.svg" alt=""></a></li>
+	       				</ul>
+	       			</div>
+	       		</div>
+	       		<div class="row" style="padding: 25px 0;">
+	       			<hr>
+	       		</div>
+	       		<div class="row">
+	       			<div class="col-md-12">
 	       				<ul class="list-inline footer-links">
+	       					<li><a href="">© 2018 Cryptocurrency. All rights reserved.</a></li>
+	       					<li><a href="faqs.html">About</a></li>
 	       					<li><a href="faqs.html">terms and conditions</a></li>
 	       					<li><a href="faqs.html">FAQs</a></li>
 	       				</ul>
 	       			</div>
+	       			
 	       		</div>
 	       	</div>
 	       </footer>
 	   <script src="js/jquery.min.js"></script>
 	   <script src="js/bootstrap.min.js"></script>
+	   <script src="js/WOW.js"></script>
+		
+		<script>
+			new WOW().init();
 
+
+			// if visible 
+
+			$.fn.isInViewport = function() {
+
+
+			    var offset = $(this).offset();
+			    if(!offset) return;
+			    var elementTop = offset.top;
+			    var elementBottom = elementTop + $(this).outerHeight();
+
+			    var viewportTop = $(window).scrollTop();
+			    var viewportBottom = viewportTop + $(window).height();
+
+			    return elementBottom > viewportTop && elementTop < viewportBottom;
+			};
+
+			$(window).on('resize scroll', function() {
+			    if ($('.icon-container').isInViewport()) {
+
+			           $('.brand-support-icon li').each(function() {
+			       			    var delay = $(this).index() * 100 + 'ms';
+
+			       			    $(this).addClass('world' + delay);
+			       			 $(this).data('wow-delay', '2s');
+
+			       			});
+			    } 
+			});
+
+
+
+
+
+
+			
+			
+		</script>
 </body>
 </html>
