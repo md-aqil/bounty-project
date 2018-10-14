@@ -8,7 +8,7 @@ body {
 }
 
 .bg-gray {
-  background: #ececec;
+  background: #eaeef0;
 }
 
 :root {
@@ -83,7 +83,7 @@ body {
 }
 .main-heading{
   font-weight: 700;
-  font-size: 60px;
+  font-size: 52px;
   color: #000;
   line-height: 1.5;
   margin-bottom: 50px;

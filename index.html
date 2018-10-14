@@ -81,33 +81,35 @@
 	       			Platforms we support
 	       		</h1>
 	       		<ul class="brand-support-icon list-inline text-center">
-	       			<li class="wow fadeInUp" data-wow-delay="">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/facebook.svg" >
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".1s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/twitter-02.svg">
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".2s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/instagram-02.svg">
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".3s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/youtube-02.svg">
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".4s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/linkedin.svg">
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".5s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/steemit.png">
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".6s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/telegram.svg">
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".7s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/medium.svg">
 	       			</li>
-	       			<li class="wow fadeInUp" data-wow-delay=".8s">
+	       			<li class="wow fadeInUp">
 	       				<img src="img/reddit.png">
 	       			</li>
+
+
 	       		</ul>
 	       </div>
 	       <div class="container-fluid" style="background: var(--theme-color)">
@@ -192,6 +194,7 @@
 	       			</div>
 	       			
 	       		</div>
+	       	
 	       	</div>
 	       </footer>
 	   <script src="js/jquery.min.js"></script>
@@ -209,6 +212,10 @@
 				$('.brand-box-side-design .brands-img').css('display' , 'block');
 			});
 
+			$('.brand-support-icon li').each(function(a) {
+				$(this).attr('data-wow-delay', `${(a / 10) * 1.5}s`);
+			});
+			
 			new WOW().init();
 
 
@@ -228,25 +235,6 @@
 			    return elementBottom > viewportTop && elementTop < viewportBottom;
 			};
 
-			$(window).on('resize scroll', function() {
-			    if ($('.icon-container').isInViewport()) {
-
-			           $('.brand-support-icon li').each(function() {
-			       			    var delay = $(this).index() * 100 + 'ms';
-
-			       			    $(this).addClass('world' + delay);
-			       			 $(this).data('wow-delay', '2s');
-
-			       			});
-			    } 
-			});
-
-
-
-
-
-
-			
 			
 		</script>
 </body>

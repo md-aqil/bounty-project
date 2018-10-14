@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+	<aside class="sidebar">
+		<h1 style="font-weight: 300;color:#fff;text-align: center;">IMinfluencer</h1>
+		<hr>
+		<ul class="dashlist">
+			<li><a href=""><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a> </li>
+			<li><a href=""><i class="glyphicon glyphicon-cog"></i> Profile</a></li>
+			<li><a href="">Option four</a></li>
+			<li><a href="">Option five</a></li>
+		</ul>
+	</aside>
+
+
+	<main class="content-wrapper">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-sample">
+					<ul class="nav navbar-nav">
+						<li class=""><a href="#">Home</a></li>
+						<li><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li> 
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">Logout</a></li>
+						<li>
+							<a href="#" style="padding-top: 10px;padding-bottom: 0"><img width="30" src="img/avatar.jpg" alt=""> User Name</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<h2 class="dash-title">New Campaigns</h2>
+	</main>
+	   <script src="js/jquery.min.js"></script>
+	   <script src="js/bootstrap.min.js"></script>
+	   <script src="js/WOW.js"></script>
+		
+		<script>
+			$('.influencer-tab').click(function() {
+				$('.brand-box-side-design .influencer-img').css('display' , 'block');
+				$('.brand-box-side-design .brands-img').css('display' , 'none');
+			});
+
+			$('.brands-tab').click(function() {
+				$('.brand-box-side-design .influencer-img').css('display' , 'none');
+				$('.brand-box-side-design .brands-img').css('display' , 'block');
+			});
+
+			$('.brand-support-icon li').each(function(a) {
+				$(this).attr('data-wow-delay', `${(a / 10) * 1.5}s`);
+			});
+			
+			new WOW().init();
+
+
+			// if visible 
+
+			$.fn.isInViewport = function() {
+
+
+			    var offset = $(this).offset();
+			    if(!offset) return;
+			    var elementTop = offset.top;
+			    var elementBottom = elementTop + $(this).outerHeight();
+
+			    var viewportTop = $(window).scrollTop();
+			    var viewportBottom = viewportTop + $(window).height();
+
+			    return elementBottom > viewportTop && elementTop < viewportBottom;
+			};
+
+			
+		</script>
+</body>
+</html>
