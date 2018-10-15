@@ -188,6 +188,7 @@ height: 100vh;
 .brands-box {
     background: #fff;
     display: flex;
+    flex-wrap: wrap;
 }
 .brands-box form {
   padding-right: 60px;
@@ -202,9 +203,13 @@ height: 100vh;
 }
 
 .login-side-design {
-  background: linear-gradient(45deg, #5400dc, #540b80);
-  flex-grow: 1;
+  background: var(--theme-color);
+    flex-basis: 450px;
   display: flex;
+  color: #fff;
+  padding: 30px;
+  justify-content: center;
+    align-items: center;
 }
 
 .form-control {
@@ -321,4 +326,41 @@ footer {
 
 .brand-box-side-design {
      min-height: 500px;
+}
+.main-logo {
+  width: 210px;
+      margin-top: -15px;
+}
+.dropdown .btn-theme.round {
+  -webkit-transition: all .2s ;
+     -moz-transition: all .2s ;
+      -ms-transition: all .2s ;
+       -o-transition: all .2s;
+          transition: all .2s ;
+}
+.dropdown.open .btn-theme.round{
+  border-radius: 2px;
+}
+.dropdown-menu {
+  border-top: 2px solid #752ceb;
+      margin-top: 15px;
+}
+.dropdown-menu:before {
+ content: '';
+     border: 10px solid;
+     border-color: #ff000000 #0000ff00 #752ceb #ffff0000;
+     display: block;
+     position: absolute;
+     right: 2px;
+     top: -22px;
+}
+.email-verification .lead {
+      text-align: center;
+    line-height: 2;
+    padding: 80px;
+}
+.about-page p{
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }

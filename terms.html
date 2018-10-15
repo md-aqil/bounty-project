@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+		   <nav class="navbar navbar-default navbar-transprent" style="padding-top: 30px;">
+	           <div class="container">
+	             <!-- Brand and toggle get grouped for better mobile display -->
+	             <div class="navbar-header">
+	               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
+	                 <span class="sr-only">Toggle navigation</span>
+	                 <span class="icon-bar"></span>
+	                 <span class="icon-bar"></span>
+	                 <span class="icon-bar"></span>
+	               </button>
+	              <a class="navbar-brand" href="#">
+	                <img class="main-logo" src="img/Iminfluencer Logo 2.svg" alt="">
+	                </a>
+	             </div>
+	     
+	             <!-- Collect the nav links, forms, and other content for toggling -->
+	             <div class="collapse navbar-collapse app" id="navbar-sample">
+	               <ul class="nav navbar-nav">
+	                	<li><a href="">About</a></li>
+	                	<li><a href="faqs.html">FAQs</a></li>
+	               </ul>
+	               <ul class="nav navbar-nav navbar-right">
+	                 <li><a href="login.html">Login</a></li>
+	                 <li>
+	                 	<p class="navbar-btn">
+	                 	    		<div class="dropdown">
+	                 	    			  <button class="btn btn-theme round dropdown-toggle" type="button" data-toggle="dropdown" style="padding: 10px 40px;
+	                 	               margin-left: 14px;    margin-top: -6px;">
+	                 	    			    Join
+	                 	    			  </button>
+	                 	    			  <ul class="dropdown-menu">
+	                 	    			    <li><a href="#">I'm a Influencers</a></li>
+	                 	    			    <li><a href="#">I'm a Brand</a></li>
+	                 	    			   
+	                 	    			  </ul>
+	                 	    		</div>
+	                 	 </p>     	
+	                 	
+	                 			
+	                 </li>
+	               </ul>
+	             </div>
+	           </div>
+	       </nav>
+	<div class="container about-page">
+
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Terms and Conditions</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore explicabo dolorum nulla ut natus saepe commodi corrupti sequi est atque molestias optio, aut enim accusantium hic aperiam eaque ipsam.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore explicabo dolorum nulla ut natus saepe commodi corrupti sequi est atque molestias optio, aut enim accusantium hic aperiam eaque ipsam.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore explicabo dolorum nulla ut natus saepe commodi corrupti sequi est atque molestias optio, aut enim accusantium hic aperiam eaque ipsam.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore explicabo dolorum nulla ut natus saepe commodi corrupti sequi est atque molestias optio, aut enim accusantium hic aperiam eaque ipsam.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet labore explicabo dolorum nulla ut natus saepe commodi corrupti sequi est atque molestias optio, aut enim accusantium hic aperiam eaque ipsam.
+				</p>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+	</div>
+	
+<footer>
+   	<div class="container">
+   		<div class="row">
+   			<div class="col-md-6">
+   			  <img class="main-logo" src="img/Iminfluencer Logo 2.svg" alt="">
+   			</div>
+   			<div class="col-md-6">
+   				<ul class="list-inline footer-links social">
+   					<li><a href="faqs.html"><img src="img/telegram-f.svg" alt=""></a></li>
+   					<li><a href="faqs.html"><img src="img/twitter.svg" alt=""></a></li>
+   					<li><a href="faqs.html"><img src="img/facebook-logo.svg" alt=""></a></li>
+   				</ul>
+   			</div>
+   		</div>
+   		<div class="row" style="padding: 25px 0;">
+   			<hr>
+   		</div>
+   		<div class="row">
+   			<div class="col-md-12">
+   				<ul class="list-inline footer-links">
+   					<li><a href="">iminfluencer © 2018. All rights reserved </a></li>
+   					<li><a href="faqs.html">About</a></li>
+   					<li><a href="faqs.html">terms and conditions</a></li>
+   					<li><a href="faqs.html">FAQs</a></li>
+   				</ul>
+   			</div>
+   			
+   		</div>
+   	</div>
+</footer>
+	   <script src="js/jquery.min.js"></script>
+	   <script src="js/bootstrap.min.js"></script>
+	   <script src="js/WOW.js"></script>
+		
+		<script>
+			$('.influencer-tab').click(function() {
+				$('.brand-box-side-design .influencer-img').css('display' , 'block');
+				$('.brand-box-side-design .brands-img').css('display' , 'none');
+			});
+
+			$('.brands-tab').click(function() {
+				$('.brand-box-side-design .influencer-img').css('display' , 'none');
+				$('.brand-box-side-design .brands-img').css('display' , 'block');
+			});
+
+			$('.brand-support-icon li').each(function(a) {
+				$(this).attr('data-wow-delay', `${(a / 10) * 1.5}s`);
+			});
+			
+			new WOW().init();
+
+
+			// if visible 
+
+			$.fn.isInViewport = function() {
+
+
+			    var offset = $(this).offset();
+			    if(!offset) return;
+			    var elementTop = offset.top;
+			    var elementBottom = elementTop + $(this).outerHeight();
+
+			    var viewportTop = $(window).scrollTop();
+			    var viewportBottom = viewportTop + $(window).height();
+
+			    return elementBottom > viewportTop && elementTop < viewportBottom;
+			};
+
+			
+		</script>
+</body>
+</html>

@@ -55,3 +55,21 @@
   color: #2c3e50 !important;
   font-weight: 400;
 }
+
+.profile-img {
+  --size: 130px;
+      height: var(--size);
+      width: var(--size);
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      margin-top: -90px;
+}
+
+.profile-box {
+  background: #fff;
+    box-shadow: 0 1px 6px 0 rgba(34,36,38,.15);
+    padding: 15px 20px;
+    margin-top: 80px;
+}
