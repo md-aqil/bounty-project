@@ -10,6 +10,10 @@ body {
 .bg-gray {
   background: #eaeef0;
 }
+.para {
+  line-height: 1.6;
+  font-size: 16px;
+}
 
 :root {
   --theme-color: #752ceb;
@@ -175,12 +179,12 @@ height: 100vh;
 }
 
 .brands-box p {
- font-size: 18px;
- line-height: 2;
- padding-right: 30px;
- color: #717171;
- font-weight: 400;
- word-spacing: 4px;
+ font-size: 16px;
+     line-height: 2;
+     padding-right: 30px;
+     color: #333333;
+     font-weight: 400;
+     word-spacing: 4px;
 }
 .brands-box .nav-pills {
   padding-bottom: 30px;
@@ -363,4 +367,93 @@ footer {
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 20px;
+}
+
+ {
+
+}
+
+.account-row .nav-pills {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.account-row .nav-pills a {
+
+    color: #333;
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: -2px;
+}
+
+.btn.btn-theme.small {
+      padding: 7px 35px;
+
+}
+
+
+
+
+
+.account-row .nav-pills li.active a{
+  /*border: none !important;*/
+}
+
+  .connect-social {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+.connect-social li img{
+  width: 50px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.connect-social li {
+      padding: 7px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid transparent;
+
+}
+
+.connect-social li:hover {
+  border: 1px solid var(--theme-color);
+}
+
+.data-box {
+  font-weight: 300;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 15px;
+}
+
+
+  .invite-box {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+.invite-box p{
+  font-size: 17px;
+      line-height: 2;
+      margin-top: 10px;
+}
+
+.dash-logo{
+  width: 160px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: -8px;
 }

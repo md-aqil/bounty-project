@@ -666,6 +666,7 @@
   animation-name: fadeInRightBig;
 }
 
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -681,6 +682,7 @@
 .fadeInUp {
   animation-name: fadeInUp;
 }
+
 
 @keyframes fadeInUpBig {
   from {

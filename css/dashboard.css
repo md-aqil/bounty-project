@@ -54,6 +54,8 @@
 .dash-title {
   color: #2c3e50 !important;
   font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 25px;
 }
 
 .profile-img {
@@ -72,4 +74,70 @@
     box-shadow: 0 1px 6px 0 rgba(34,36,38,.15);
     padding: 15px 20px;
     margin-top: 80px;
+}
+
+.card-box {
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px #00000026;
+    margin-bottom: 20px;
+}
+
+
+.share-options li img{
+  width: 20px;
+
+}
+.f-time {
+ 
+      font-size: 16px;
+      text-align: center;
+      margin-top: 10px;
+}
+
+.f-time i {
+  font-size: 20px;
+  color: var(--theme-color);
+   vertical-align: middle;
+
+}
+.f-time time {
+  font-size: 25px;
+    color: green;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-weight: bold;
+     vertical-align: middle;
+}
+
+.progress {
+  height: 4px;
+}
+
+.deadline {
+
+  padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.tokens {
+  margin: 35px auto;
+      text-align: center;
+      font-size: 26px;
+}
+.media-heading {
+  margin-bottom: 0;
+}
+.share-timing .btn-theme {
+  padding: 4px 40px;
+  box-shadow: none;
+}
+
+.bordered {
+  border: 1px solid var(--theme-color);
+  
 }
