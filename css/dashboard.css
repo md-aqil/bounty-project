@@ -141,3 +141,23 @@
   border: 1px solid var(--theme-color);
   
 }
+
+.fstMultipleMode .fstQueryInputExpanded {
+  font-size: 16px;
+}
+.fstResultItem {
+  font-size: 16px;
+}
+
+.fstElement {
+  width: 100%;
+}
+.fstMultipleMode .fstControls {
+  width: 100%;
+}
+
+.fstResultItem.fstSelected , .fstResultItem.fstFocused, .fstChoiceItem{
+    color: #fff;
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+}
