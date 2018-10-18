@@ -2,7 +2,6 @@
 
 
   .brands-box form {
-    padding-right: 0 !important;
   }
 
   .brands-box {
@@ -15,6 +14,11 @@
   .login-body {
     height: 100% !important;
   }
+  
+  .login-side-design {
+   width: 100%;
+   flex-basis: 100%;
+  }
 }/*media*/
 
 @media (min-width: 768px) {
@@ -22,8 +26,4 @@
     width: 400px !important;
   }
  
-  .login-side-design {
-   width: 100%;
-   flex-basis: 100%;
-  }
 }

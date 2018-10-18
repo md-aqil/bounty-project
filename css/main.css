@@ -22,7 +22,9 @@ body {
   --theme-color: #752ceb;
  
 }
-
+.theme-text {
+  color: var(--theme-color);
+}
 .f-m {
   font-family: 'Montserrat', sans-serif !important;
 }
