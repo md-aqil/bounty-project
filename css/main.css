@@ -148,8 +148,6 @@ height: 100vh;
       width: var(--size);
       height: var(--size);
     /*box-shadow: -1px 3px 10px #00000024;*/
-        padding: 15px;
-        border-radius: 6px;
         margin: 40px 50px;
 
 }
