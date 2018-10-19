@@ -31,12 +31,18 @@
       margin-bottom: 30px;
   }
 .btn.btn-theme {
-      padding: 8px 30px;
+     padding: 7px 24px;
 }
 .cta-row .col-md-6.col-xs-6 {
-  text-align: center;
   margin-bottom: 40px;
 }
+.cta-row .col-md-6.col-xs-6:first-child {
+  text-align: left;
+}
+.cta-row .col-md-6.col-xs-6:last-child {
+  text-align: right;
+}
+
 .brand-support-icon li {
     --size: 95px;
     margin: 15px;
@@ -70,7 +76,25 @@
   padding-right: 0px;
 
 }
-
+.main-logo {
+    width: 176px;
+}
+.footer-links.social li a {
+    padding-right: 0;
+    padding-left: 10px;
+}
+._signUp-form {
+  padding: 30px 30px !important;
+}
+.login-side-design h1 {
+ text-align: center;
+     font-weight: 300;
+     font-size: 28px;
+     line-height: 1.7;
+}
+.list-inline.footer-links {
+  text-align: center;
+}
 }/*media*/
 
 @media (min-width: 768px) {

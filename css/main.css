@@ -460,3 +460,7 @@ footer {
   margin-top: 10px;
   margin-bottom: -8px;
 }
+
+._signUp-form {
+  padding: 30px 50px;
+}
