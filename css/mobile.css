@@ -13,13 +13,19 @@
   }
   .login-body {
     height: 100% !important;
+    display: block !important;
   }
-  
+    .login-body .box-login {
+    display: block !important;
+
+  }
   .login-side-design {
    width: 100%;
    flex-basis: 100%;
   }
-
+._sgn {
+    padding: 30px 30px !important;
+}
   .spacethis {
       padding-top: 40px;
       padding-bottom: 40px;
