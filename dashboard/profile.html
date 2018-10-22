@@ -2,24 +2,38 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/animate.css">
-	<link rel="stylesheet" href="../css/fastselect.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/dashboard.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+
+
+	<meta name="language" content="en">
+
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	  <meta property="og:locale" content="en_US" />
+
+	  <meta property="og:type" content="website" />
+
 </head>
+
 <body>
 	<aside class="sidebar">
-		<img class="dash-logo" src="../img/logo-footer.svg" alt="">
-
-		<hr>
-		<ul class="dashlist">
-			<li><a href=""><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a> </li>
-			<li><a href=""><i class="glyphicon glyphicon-cog"></i> Profile</a></li>
-			<li><a href="">Option four</a></li>
-			<li><a href="">Option five</a></li>
-		</ul>
-	</aside>
+			<div class="side-close visible-xs"><img src="../img/close.svg" alt=""></div>
+			<img class="main-logo" src="img/logo-footer.svg" alt="">
+			<hr>
+			<ul class="dashlist">
+				<li><a href="" class="active"><i class="glyphicon glyphicon-th-large"></i> Dashboard</a> </li>
+				<li><a href="profile.html"><i class="glyphicon glyphicon-cog"></i> My Account</a></li>
+				<li><a href=""> <i class="glyphicon glyphicon-tasks"></i>Task History</a></li>
+				<li><a href=""><i class="glyphicon glyphicon-star"></i> My Rating</a></li>
+			</ul>
+		</aside>
 
 
 	<main class="content-wrapper">
@@ -313,7 +327,13 @@
 				$('[data-src='+href+']').slideDown().siblings().slideUp();
 			});
 	
+	$('.mobile-sidebar-visible').click(function() {
+				$('.sidebar').addClass('sidebar-visible');
+			});
 
+			$('.side-close').click(function() {
+				$('.sidebar').removeClass('sidebar-visible');
+			});
 		</script>
 </body>
 </html>

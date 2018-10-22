@@ -7,9 +7,23 @@
 	<link rel="stylesheet" href="../css/animate.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="../css/dashboard.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+
+
+	<meta name="language" content="en">
+
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	  <meta property="og:locale" content="en_US" />
+
+	  <meta property="og:type" content="website" />
+
 </head>
 <body>
 	<aside class="sidebar">
+		<div class="side-close visible-xs"><img src="../img/close.svg" alt=""></div>
 		<img class="main-logo" src="img/logo-footer.svg" alt="">
 		<hr>
 		<ul class="dashlist">
@@ -26,6 +40,7 @@
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
+					<div class="visible-xs btn mobile-sidebar-visible"><img src="../img/sort-button-with-three-lines.svg" alt=""></div>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sample" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -139,7 +154,14 @@
 			    return elementBottom > viewportTop && elementTop < viewportBottom;
 			};
 
-			
+			$('.mobile-sidebar-visible').click(function() {
+				$('.sidebar').addClass('sidebar-visible');
+			});
+
+			$('.side-close').click(function() {
+				$('.sidebar').removeClass('sidebar-visible');
+			});
+
 		</script>
 </body>
 </html>

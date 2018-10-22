@@ -101,6 +101,44 @@
 .list-inline.footer-links {
   text-align: center;
 }
+
+/*dashboard mobile look=================*/
+.sidebar {
+  box-shadow: none;
+  -webkit-transform: translateX(-100%);
+     -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+       -o-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.content-wrapper {
+  width: 100%;
+      margin-left: 0;
+}
+.sidebar {
+  transition: all .3s;
+}
+.sidebar.sidebar-visible {
+   transform: translateX(0%);
+}
+
+.mobile-sidebar-visible {
+  float: left;
+}
+.mobile-sidebar-visible img {
+  width: 28px;
+  margin-top: 2px;
+}
+.side-close {
+  position: absolute;
+      right: 14px;
+      color: #fff;
+      top: 10px;
+}
+.side-close img {
+  width: 20px;
+}
 }/*media*/
 
 @media (min-width: 768px) {
