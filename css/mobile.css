@@ -139,6 +139,39 @@
 .side-close img {
   width: 20px;
 }
+
+
+.bounty_middle {
+  margin: 0;
+}
+
+.timeline {
+  padding-left: 0;
+      padding-right: 0;
+}
+
+.timeline li.li {
+    width: 100px;
+    display: inline-block;
+}
+
+.status:before {
+    top: -40%;
+    transition: all 200ms ease-in;
+}
+
+.status:before {
+    --size: 33px;
+    width: var(--size);
+    height: var(--size);
+   
+    font-size: 14px;
+}
+.big-heading{
+  font-size: 30px;
+}
+
+
 }/*media*/
 
 @media (min-width: 768px) {
