@@ -713,3 +713,7 @@ footer {
 .status-footer  img {
   width: 20px;
 }
+
+.no-shadow .btn {
+  box-shadow: none;
+}
