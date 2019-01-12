@@ -689,3 +689,27 @@ footer {
  border-radius: 4px;
 
 }
+
+.status-footer {
+      border-top: 1px solid #0000000f;
+      padding: 9px 15px;
+      margin-bottom: -13px;
+      margin-left: -13px;
+      margin-right: -13px;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #747474;
+        font-size: 17px;
+}
+
+.thumbnail {
+  border: none;
+  border-radius: .28571429rem;
+  -webkit-box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.status-footer  img {
+  width: 20px;
+}
