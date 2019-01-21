@@ -19,6 +19,7 @@
 	  <meta property="og:locale" content="en_US" />
 
 	  <meta property="og:type" content="website" />
+   <link rel="stylesheet" href="http://beeknock.com/tools/bee-icon/beeicon-font.css">
 
 </head>
 <body>
@@ -26,12 +27,23 @@
 		<div class="side-close visible-xs"><img src="../img/close.svg" alt=""></div>
 		<img class="main-logo" src="img/logo-footer.svg" alt="">
 		<hr>
+
 		<ul class="dashlist">
 			<li><a href="" class="active"><i class="glyphicon glyphicon-th-large"></i> Dashboard</a> </li>
 			<li><a href="profile.html"><i class="glyphicon glyphicon-cog"></i> My Account</a></li>
 			<li><a href="../terms.html"> <i class="glyphicon glyphicon-tasks"></i>T&C</a></li>
-			<li><a href=""><i class="glyphicon glyphicon-star"></i> My Rating</a></li>
+
+			<li>
+				<a href=""><i class="glyphicon glyphicon-star"></i> My Rating</a>
+			</li>
+			<li>
+				<a href="wallet.html"><i class="bee-icon-wallet"></i> Wallet</a>
+			</li>
+
+			
 		</ul>
+
+
 	</aside>
 
 
@@ -65,6 +77,7 @@
 				</div>
 			</div>
 		</nav>
+		
 		<h2 class="dash-title">New Campaigns</h2>
 		<div class="">
 			<div class="card-box para bordered text-center">
@@ -117,51 +130,8 @@
 	   <script src="../js/jquery.min.js"></script>
 	   <script src="../js/bootstrap.min.js"></script>
 	   <script src="../js/WOW.js"></script>
+	   <script src="../js/controller.js"></script>
 		
-		<script>
-			$('.influencer-tab').click(function() {
-				$('.brand-box-side-design .influencer-img').css('display' , 'block');
-				$('.brand-box-side-design .brands-img').css('display' , 'none');
-			});
-
-			$('.brands-tab').click(function() {
-				$('.brand-box-side-design .influencer-img').css('display' , 'none');
-				$('.brand-box-side-design .brands-img').css('display' , 'block');
-			});
-
-
-
-			$('.brand-support-icon li').each(function(a) {
-				$(this).attr('data-wow-delay', `${(a / 10) * 1.5}s`);
-			});
-			
-			new WOW().init();
-
-
-			// if visible 
-
-			$.fn.isInViewport = function() {
-
-
-			    var offset = $(this).offset();
-			    if(!offset) return;
-			    var elementTop = offset.top;
-			    var elementBottom = elementTop + $(this).outerHeight();
-
-			    var viewportTop = $(window).scrollTop();
-			    var viewportBottom = viewportTop + $(window).height();
-
-			    return elementBottom > viewportTop && elementTop < viewportBottom;
-			};
-
-			$('.mobile-sidebar-visible').click(function() {
-				$('.sidebar').addClass('sidebar-visible');
-			});
-
-			$('.side-close').click(function() {
-				$('.sidebar').removeClass('sidebar-visible');
-			});
-
-		</script>
+		
 </body>
 </html>
